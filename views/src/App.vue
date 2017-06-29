@@ -31,8 +31,8 @@
     }
 
     html, body {
-        height: 100%;
-        overflow: hidden;
+        /*height: 100%;*/
+        /*overflow: hidden;*/
         font-family: "Microsoft YaHei", Microsoft JhengHei;
     }
 
