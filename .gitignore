@@ -7,3 +7,6 @@ npm-debug.log
 .vscode
 tree.md
 /node_modules/
+/pingpp/pingpp-js/node_modules/
+/pingpp/pingpp-nodejs/node_modules/
+/views/node_modules/
