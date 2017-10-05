@@ -314,8 +314,31 @@
             <mt-swipe-item>2</mt-swipe-item>
             <mt-swipe-item>3</mt-swipe-item>
         </mt-swipe>
+<!--Lazy load-->
+        <div id="container">
+            <ul>
+                <li v-for="item in list">
+                    <img v-lazy.container="item">
+                </li>
+            </ul>
+        </div>
 
+        <!--Range-->
+        <mt-range
+                v-model="rangeValue"
+                :min="10"
+                :max="90"
+                :step="10"
+                :bar-height="5">
+            <div slot="start">0</div>
+            <div slot="end">100</div>
+        </mt-range>
 
+        <!--Progress-->
+        <mt-progress :value="60" :bar-height="5">
+            <div slot="start">0%</div>
+            <div slot="end">100%</div>
+        </mt-progress>
     </div>
 
 </template>
